@@ -13,7 +13,7 @@ function App() {
 
   const handleImageError = (e) => {
     e.target.src =
-      "https://ui-avatars.com/api/?name=Muhamad+Dava&background=10b981&color=fff&size=200";
+      "https://ui-avatars.com/api/?name=Dava+Dwi&background=10b981&color=fff&size=200";
   };
 
   useEffect(() => {
@@ -24,13 +24,23 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-300 font-sans selection:bg-emerald-500/30 selection:text-emerald-200 flex flex-col lg:flex-row">
       <Helmet>
+        <html lang={lang} />
         <title>{content.seo.title}</title>
         <meta name="description" content={content.seo.description} />
         <meta name="keywords" content={content.seo.keywords} />
+        <link rel="canonical" href="https://itsdep.space/" />
+
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.description} />
+        <meta property="og:url" content="https://itsdep.space/" />
+        <meta property="og:image" content="https://itsdep.space/og-image.png" />
+
         <meta name="twitter:title" content={content.seo.title} />
         <meta name="twitter:description" content={content.seo.description} />
+        <meta
+          name="twitter:image"
+          content="https://itsdep.space/og-image.png"
+        />
       </Helmet>
 
       <Sidebar
