@@ -27,10 +27,10 @@ function App() {
         <title>{content.seo.title}</title>
         <meta name="description" content={content.seo.description} />
         <meta name="keywords" content={content.seo.keywords} />
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.description} />
-        <meta property="og:image" content="/og-image.png" />
+        <meta name="twitter:title" content={content.seo.title} />
+        <meta name="twitter:description" content={content.seo.description} />
       </Helmet>
 
       <Sidebar
