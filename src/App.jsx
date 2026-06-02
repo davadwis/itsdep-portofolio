@@ -164,18 +164,27 @@ function App() {
         <link rel="alternate" hrefLang="x-default" href={enUrl} />
 
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="ItsDep" />
         <meta property="og:locale" content={ogLocale} />
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.description} />
         <meta property="og:url" content={currentPageUrl} />
         <meta property="og:image" content={`${siteUrl}og-image.png`} />
+        <meta property="og:image:secure_url" content={`${siteUrl}og-image.png`} />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+          property="og:image:alt"
+          content="Dava Dwi - IT Leader and Full Stack Developer Portfolio"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={currentPageUrl} />
         <meta name="twitter:title" content={content.seo.title} />
         <meta name="twitter:description" content={content.seo.description} />
         <meta name="twitter:image" content={`${siteUrl}og-image.png`} />
+        <meta name="twitter:image:alt" content="Dava Dwi Portfolio Cover" />
 
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
